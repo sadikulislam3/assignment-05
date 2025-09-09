@@ -7,7 +7,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
+<body class="bg-[#F0FDF4]">
 
+    <header class="bg-[#0D5737] text-white shadow-lg">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="Logo" class="h-10">
+                <h1 class="text-xl md:text-2xl font-bold">Emergency Service</h1>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="flex items-center gap-2 bg-emerald-50 text-black font-bold px-4 py-2 rounded-full">
+                    <span id="heart-count">0</span>
+                    <img src="assets/heart.png" alt="Heart" class="h-5 w-5">
+                </div>
+                <div class="flex items-center gap-2 bg-emerald-50 text-black font-bold px-4 py-2 rounded-full">
+                    <span id="coin-count">100</span>
+                    <img src="assets/coin.png" alt="Coin Icon" class="h-5 w-5">
+                </div>
                 <div class="flex items-center gap-2 bg-green-600 text-white font-bold px-4 py-2 rounded-full">
                     <span id="copy-count">0</span>
                     <span>Copy</span>
