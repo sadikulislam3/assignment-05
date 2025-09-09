@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>জরুরী সেবা ডিরেক্টরি</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body class="bg-[#F0FDF4]">
+
+    <header class="bg-[#0D5737] text-white shadow-lg">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="Logo" class="h-10">
+                <h1 class="text-xl md:text-2xl font-bold">Emergency Service</h1>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="flex items-center gap-2 bg-emerald-50 text-black font-bold px-4 py-2 rounded-full">
+                    <span id="heart-count">0</span>
+                    <img src="assets/heart.png" alt="Heart" class="h-5 w-5">
+                </div>
+                <div class="flex items-center gap-2 bg-emerald-50 text-black font-bold px-4 py-2 rounded-full">
+                    <span id="coin-count">100</span>
+                    <img src="assets/coin.png" alt="Coin Icon" class="h-5 w-5">
+                </div>
+                <div class="flex items-center gap-2 bg-green-600 text-white font-bold px-4 py-2 rounded-full">
+                    <span id="copy-count">0</span>
+                    <span>Copy</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="bg-gradient-to-r from-[#0D5737] via-[#1A7E56] to-[#0D5737] text-white py-12 text-center flex flex-col items-center">
+        <img src="assets/logo-dark.png" alt="Bangladesh Government Logo" class="h-24 mb-4">
+        <h1 class="text-4xl md:text-5xl font-extrabold">জরুরী সেবা ডিরেক্টরি</h1>
+        <p class="mt-4 text-lg opacity-80">Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh</p>
+    </section>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="bg-white p-6 rounded-2xl border-2 border-green-200">
+             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <div id="card-container" class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="card bg-white shadow rounded-lg p-4 border border-gray-100 hover:border-green-400 transition-all relative flex flex-col">
+                        <img src="assets/emergency.png" alt="National Emergency" class="h-12 w-12 mb-2">
+                        <button id="heart-btn-1" class="absolute top-3 right-3 text-gray-400 hover:text-red-500"><i class="far fa-heart text-xl"></i></button>
+                        <div class="text-left">
+                            <h2 class="font-bold text-lg text-gray-800">জাতীয় জরুরি সেবা</h2>
+                            <p class="text-sm text-gray-500">National Emergency</p>
+                            <p class="font-bold text-2xl text-gray-900 my-2">999</p>
+                            <div class="text-xs font-semibold px-2 py-1 rounded bg-[#E8F5E9] text-[#388E3C] inline-block">সার্বক্ষণিক</div>
+                        </div>
+                        <div class="mt-auto pt-4 flex gap-2">
+                            <button id="copy-btn-1" class="flex-1 px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors" data-number="999"><i class="fa-solid fa-copy mr-2"></i> Copy</button>
+                            <button id="call-btn-1" class="flex-1 px-4 py-2 rounded bg-[#28A745] text-white hover:bg-[#218838] transition-colors" data-name="জাতীয় জরুরি সেবা" data-number="999"><i class="fa-solid fa-phone mr-2"></i> Call</button>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white shadow rounded-lg p-4 border border-gray-100 hover:border-green-400 transition-all relative flex flex-col">
+                        <img src="assets/police.png" alt="Police" class="h-12 w-12 mb-2">
+                        <button id="heart-btn-2" class="absolute top-3 right-3 text-gray-400 hover:text-red-500"><i class="far fa-heart text-xl"></i></button>
+                        <div class="text-left">
+                            <h2 class="font-bold text-lg text-gray-800">পুলিশ</h2>
+                            <p class="text-sm text-gray-500">Police</p>
+                            <p class="font-bold text-2xl text-gray-900 my-2">999</p>
+                            <div class="text-xs font-semibold px-2 py-1 rounded bg-[#E8F5E9] text-[#388E3C] inline-block">পুলিশ</div>
+                        </div>
+                        <div class="mt-auto pt-4 flex gap-2">
+                            <button id="copy-btn-2" class="flex-1 px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors" data-number="999"><i class="fa-solid fa-copy mr-2"></i> Copy</button>
+                            <button id="call-btn-2" class="flex-1 px-4 py-2 rounded bg-[#28A745] text-white hover:bg-[#218838] transition-colors" data-name="পুলিশ" data-number="999"><i class="fa-solid fa-phone mr-2"></i> Call</button>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white shadow rounded-lg p-4 border border-gray-100 hover:border-green-400 transition-all relative flex flex-col">
+                        <img src="assets/fire-service.png" alt="Fire Service" class="h-12 w-12 mb-2">
+                        <button id="heart-btn-3" class="absolute top-3 right-3 text-gray-400 hover:text-red-500"><i class="far fa-heart text-xl"></i></button>
+                        <div class="text-left">
+                            <h2 class="font-bold text-lg text-gray-800">ফায়ার সার্ভিস</h2>
+                            <p class="text-sm text-gray-500">Fire Service</p>
+                            <p class="font-bold text-2xl text-gray-900 my-2">999</p>
+                            <div class="text-xs font-semibold px-2 py-1 rounded bg-[#E8F5E9] text-[#388E3C] inline-block">ফায়ার</div>
+                        </div>
+                        <div class="mt-auto pt-4 flex gap-2">
+                           <button id="copy-btn-3" class="flex-1 px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors" data-number="999"><i class="fa-solid fa-copy mr-2"></i> Copy</button>
+                           <button id="call-btn-3" class="flex-1 px-4 py-2 rounded bg-[#28A745] text-white hover:bg-[#218838] transition-colors" data-name="ফায়ার সার্ভিস" data-number="999"><i class="fa-solid fa-phone mr-2"></i> Call</button>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white shadow rounded-lg p-4 border border-gray-100 hover:border-green-400 transition-all relative flex flex-col">
+                        <img src="assets/ambulance.png" alt="Ambulance" class="h-12 w-12 mb-2">
+                        <button id="heart-btn-4" class="absolute top-3 right-3 text-gray-400 hover:text-red-500"><i class="far fa-heart text-xl"></i></button>
+                         <div class="text-left">
+                            <h2 class="font-bold text-lg text-gray-800">অ্যাম্বুলেন্স</h2>
+                            <p class="text-sm text-gray-500">Ambulance</p>
+                            <p class="font-bold text-2xl text-gray-900 my-2">1994-999999</p>
+                            <div class="text-xs font-semibold px-2 py-1 rounded bg-[#E8F5E9] text-[#388E3C] inline-block">স্বাস্থ্য</div>
+                        </div>
+                        <div class="mt-auto pt-4 flex gap-2">
+                            <button id="copy-btn-4" class="flex-1 px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors" data-number="1994-999999"><i class="fa-solid fa-copy mr-2"></i> Copy</button>
+                            <button id="call-btn-4" class="flex-1 px-4 py-2 rounded bg-[#28A745] text-white hover:bg-[#218838] transition-colors" data-name="অ্যাম্বুলেন্স" data-number="1994-999999"><i class="fa-solid fa-phone mr-2"></i> Call</button>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white shadow rounded-lg p-4 border border-gray-100 hover:border-green-400 transition-all relative flex flex-col">
+                        <img src="assets/brac.png" alt="Helpline" class="h-12 w-12 mb-2">
+                        <button id="heart-btn-5" class="absolute top-3 right-3 text-gray-400 hover:text-red-500"><i class="far fa-heart text-xl"></i></button>
+                        <div class="text-left">
+                            <h2 class="font-bold text-lg text-gray-800">নারী ও শিশু সহায়তা</h2>
+                            <p class="text-sm text-gray-500">Women & Child Helpline</p>
+                            <p class="font-bold text-2xl text-gray-900 my-2">109</p>
+                            <div class="text-xs font-semibold px-2 py-1 rounded bg-[#E8F5E9] text-[#388E3C] inline-block">সহায়তা</div>
+                        </div>
+                        <div class="mt-auto pt-4 flex gap-2">
+                           <button id="copy-btn-5" class="flex-1 px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors" data-number="109"><i class="fa-solid fa-copy mr-2"></i> Copy</button>
+                           <button id="call-btn-5" class="flex-1 px-4 py-2 rounded bg-[#28A745] text-white hover:bg-[#218838] transition-colors" data-name="নারী ও শিশু সহায়তা" data-number="109"><i class="fa-solid fa-phone mr-2"></i> Call</button>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white shadow rounded-lg p-4 border border-gray-100 hover:border-green-400 transition-all relative flex flex-col">
+                        <img src="assets/logo-dark.png" alt="Anti-Corruption" class="h-12 w-12 mb-2">
+                        <button id="heart-btn-6" class="absolute top-3 right-3 text-gray-400 hover:text-red-500"><i class="far fa-heart text-xl"></i></button>
+                         <div class="text-left">
+                            <h2 class="font-bold text-lg text-gray-800">দুর্নীতি দমন</h2>
+                            <p class="text-sm text-gray-500">Anti-Corruption</p>
+                            <p class="font-bold text-2xl text-gray-900 my-2">106</p>
+                            <div class="text-xs font-semibold px-2 py-1 rounded bg-[#E8F5E9] text-[#388E3C] inline-block">সরকারি</div>
+                        </div>
+                        <div class="mt-auto pt-4 flex gap-2">
+                            <button id="copy-btn-6" class="flex-1 px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors" data-number="106"><i class="fa-solid fa-copy mr-2"></i> Copy</button>
+                            <button id="call-btn-6" class="flex-1 px-4 py-2 rounded bg-[#28A745] text-white hover:bg-[#218838] transition-colors" data-name="দুর্নীতি দমন" data-number="106"><i class="fa-solid fa-phone mr-2"></i> Call</button>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white shadow rounded-lg p-4 border border-gray-100 hover:border-green-400 transition-all relative flex flex-col">
+                        <img src="assets/emergency.png" alt="Electricity Outage" class="h-12 w-12 mb-2">
+                        <button id="heart-btn-7" class="absolute top-3 right-3 text-gray-400 hover:text-red-500"><i class="far fa-heart text-xl"></i></button>
+                         <div class="text-left">
+                            <h2 class="font-bold text-lg text-gray-800">বিদ্যুৎ বিভ্রাট</h2>
+                            <p class="text-sm text-gray-500">Electricity Outage</p>
+                            <p class="font-bold text-2xl text-gray-900 my-2">16216</p>
+                            <div class="text-xs font-semibold px-2 py-1 rounded bg-[#E8F5E9] text-[#388E3C] inline-block">বিদ্যুৎ</div>
+                        </div>
+                        <div class="mt-auto pt-4 flex gap-2">
+                            <button id="copy-btn-7" class="flex-1 px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors" data-number="16216"><i class="fa-solid fa-copy mr-2"></i> Copy</button>
+                            <button id="call-btn-7" class="flex-1 px-4 py-2 rounded bg-[#28A745] text-white hover:bg-[#218838] transition-colors" data-name="বিদ্যুৎ বিভ্রাট" data-number="16216"><i class="fa-solid fa-phone mr-2"></i> Call</button>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white shadow rounded-lg p-4 border border-gray-100 hover:border-green-400 transition-all relative flex flex-col">
+                        <img src="assets/brac.png" alt="BRAC" class="h-12 w-12 mb-2">
+                        <button id="heart-btn-8" class="absolute top-3 right-3 text-gray-400 hover:text-red-500"><i class="far fa-heart text-xl"></i></button>
+                         <div class="text-left">
+                            <h2 class="font-bold text-lg text-gray-800">ব্র্যাক</h2>
+                            <p class="text-sm text-gray-500">BRAC</p>
+                            <p class="font-bold text-2xl text-gray-900 my-2">16445</p>
+                            <div class="text-xs font-semibold px-2 py-1 rounded bg-[#E8F5E9] text-[#388E3C] inline-block">এনজিও</div>
+                        </div>
+                        <div class="mt-auto pt-4 flex gap-2">
+                            <button id="copy-btn-8" class="flex-1 px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors" data-number="16445"><i class="fa-solid fa-copy mr-2"></i> Copy</button>
+                            <button id="call-btn-8" class="flex-1 px-4 py-2 rounded bg-[#28A745] text-white hover:bg-[#218838] transition-colors" data-name="ব্র্যাক" data-number="16445"><i class="fa-solid fa-phone mr-2"></i> Call</button>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white shadow rounded-lg p-4 border border-gray-100 hover:border-green-400 transition-all relative flex flex-col">
+                        <img src="assets/Bangladesh-Railway.png" alt="Bangladesh Railway" class="h-12 w-12 mb-2">
+                        <button id="heart-btn-9" class="absolute top-3 right-3 text-gray-400 hover:text-red-500"><i class="far fa-heart text-xl"></i></button>
+                         <div class="text-left">
+                            <h2 class="font-bold text-lg text-gray-800">বাংলাদেশ রেলওয়ে</h2>
+                            <p class="text-sm text-gray-500">Bangladesh Railway</p>
+                            <p class="font-bold text-2xl text-gray-900 my-2">163</p>
+                            <div class="text-xs font-semibold px-2 py-1 rounded bg-[#E8F5E9] text-[#388E3C] inline-block">পরিবহন</div>
+                        </div>
+                        <div class="mt-auto pt-4 flex gap-2">
+                            <button id="copy-btn-9" class="flex-1 px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors" data-number="163"><i class="fa-solid fa-copy mr-2"></i> Copy</button>
+                            <button id="call-btn-9" class="flex-1 px-4 py-2 rounded bg-[#28A745] text-white hover:bg-[#218838] transition-colors" data-name="বাংলাদেশ রেলওয়ে" data-number="163"><i class="fa-solid fa-phone mr-2"></i> Call</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="lg:col-span-1">
+                    <div class="bg-white p-4 rounded-xl border-2 border-green-100 h-full">
+                        <div class="flex justify-between items-center mb-4 border-b pb-2">
+                            <h3 class="text-lg font-bold text-gray-800">Call History</h3>
+                            <button id="clear-history-btn" class="bg-[#28A745] text-white px-3 py-1 rounded text-sm hover:bg-[#218838] transition-colors">Clear</button>
+                        </div>
+                        <div id="history-container" class="space-y-3">
+                            <p class="text-gray-500 text-sm text-center mt-4">No call history yet.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
